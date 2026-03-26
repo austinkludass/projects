@@ -280,17 +280,6 @@
     .modal-video-wrap { aspect-ratio: 16 / 9; background: #000; }
     .modal-video-wrap video { width: 100%; height: 100%; display: block; }
     .modal-footer { padding: 12px 18px; display: flex; align-items: center; justify-content: flex-end; }
-    .modal-gh-link {
-      font-size: 12px;
-      color: var(--purple-light);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      font-family: 'Space Mono', monospace;
-      transition: opacity 0.2s;
-    }
-    .modal-gh-link:hover { opacity: 0.75; }
 
     /* Footer */
     footer { border-top: 1px solid var(--border); margin-top: 32px; padding: 32px 24px; text-align: center; }
@@ -314,12 +303,7 @@
     <div class="modal-video-wrap">
       <video id="modal-video" controls playsinline></video>
     </div>
-    <div class="modal-footer">
-      <a class="modal-gh-link" id="modal-gh-link" href="#" target="_blank" rel="noopener">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        View on GitHub
-      </a>
-    </div>
+    <div class="modal-footer"></div>
   </div>
 </div>
 
@@ -343,38 +327,38 @@
   <!-- PERSONAL -->
   <div class="category">
     <div class="category-header">
-      <span class="category-label">Personal</span>
+      <span class="category-label">Client</span>
       <div class="category-line"></div>
     </div>
     <div class="card-grid">
 
-      <div class="card" data-video="videos/wiseminds1-demo.mp4" data-title="Wise Minds Admin 1.0" data-gh="https://github.com/austinkludass/WiseMindsAdmin">
+      <div class="card" data-video="videos/wiseminds1-demo.mp4" data-title="Wise Minds Admin Desktop">
         <div class="card-media">
-          <img class="thumb" src="thumbs/wiseminds1.jpg" alt="Wise Minds Admin 1.0" />
+          <img class="thumb" src="thumbs/wiseminds1.jpg" alt="Wise Minds Admin Desktop" />
           <video src="videos/wiseminds1-demo.mp4" loop muted playsinline preload="none"></video>
           <div class="play-hint"><div class="play-hint-inner"><div class="play-tri"></div></div></div>
         </div>
         <div class="card-body">
-          <div class="card-top"><span class="card-title">Wise Minds Admin 1.0</span><span class="card-cat">Full Stack</span></div>
+          <div class="card-top"><span class="card-title">Wise Minds Admin Desktop</span><span class="card-cat">Full Stack</span></div>
           <p class="card-desc">Desktop admin app for lesson scheduling, reporting and invoicing for a tutoring service.</p>
           <div class="tag-row"><span class="tag">C# MAUI</span><span class="tag">Firebase</span></div>
         </div>
       </div>
 
-      <div class="card" data-video="videos/wiseminds2-demo.mp4" data-title="Wise Minds Admin 2.0" data-gh="https://github.com/austinkludass/WiseMindsAdmin">
+      <div class="card" data-video="videos/wiseminds2-demo.mp4" data-title="Wise Minds Admin Web">
         <div class="card-media">
-          <img class="thumb" src="thumbs/wiseminds2.jpg" alt="Wise Minds Admin 2.0" />
+          <img class="thumb" src="thumbs/wiseminds2.jpg" alt="Wise Minds Admin Web" />
           <video src="videos/wiseminds2-demo.mp4" loop muted playsinline preload="none"></video>
           <div class="play-hint"><div class="play-hint-inner"><div class="play-tri"></div></div></div>
         </div>
         <div class="card-body">
-          <div class="card-top"><span class="card-title">Wise Minds Admin 2.0</span><span class="card-cat">Full Stack</span></div>
-          <p class="card-desc">Rebuilt version with improved architecture, new UI and expanded features.</p>
-          <div class="tag-row"><span class="tag">C# MAUI</span><span class="tag">Firebase</span></div>
+          <div class="card-top"><span class="card-title">Wise Minds Admin Web</span><span class="card-cat">Full Stack</span></div>
+          <p class="card-desc">Wise Minds Admin rebuilt for Web using improved architecture, UI and backend services.</p>
+          <div class="tag-row"><span class="tag">React</span><span class="tag">Firebase</span></div>
         </div>
       </div>
 
-      <div class="card" data-video="videos/sunlynk-demo.mp4" data-title="Sunlynk" data-gh="https://github.com/austinkludass">
+      <div class="card" data-video="videos/sunlynk-demo.mp4" data-title="Sunlynk">
         <div class="card-media">
           <img class="thumb" src="thumbs/sunlynk.jpg" alt="Sunlynk" />
           <video src="videos/sunlynk-demo.mp4" loop muted playsinline preload="none"></video>
@@ -382,8 +366,8 @@
         </div>
         <div class="card-body">
           <div class="card-top"><span class="card-title">Sunlynk</span><span class="card-cat">Full Stack</span></div>
-          <p class="card-desc">Add your Sunlynk description here.</p>
-          <div class="tag-row"><span class="tag">—</span></div>
+          <p class="card-desc">UOW Tradeshow June 2021 winner. A dashboard that displays complex solar data in a friendly and easy to digest format</p>
+          <div class="tag-row"><span class="tag">React</span><span class="tag">MongoDB</span><span class="tag">AWS</span></div>
         </div>
       </div>
 
@@ -398,20 +382,7 @@
     </div>
     <div class="card-grid">
 
-      <div class="card" data-video="videos/jivelite-demo.mp4" data-title="Jive Lite" data-gh="https://github.com/austinkludass">
-        <div class="card-media">
-          <img class="thumb" src="thumbs/jivelite.jpg" alt="Jive Lite" />
-          <video src="videos/jivelite-demo.mp4" loop muted playsinline preload="none"></video>
-          <div class="play-hint"><div class="play-hint-inner"><div class="play-tri"></div></div></div>
-        </div>
-        <div class="card-body">
-          <div class="card-top"><span class="card-title">Jive Lite</span><span class="card-cat">Desktop</span></div>
-          <p class="card-desc">Add your Jive Lite description here.</p>
-          <div class="tag-row"><span class="tag">—</span></div>
-        </div>
-      </div>
-
-      <div class="card" data-video="videos/mediastudio-demo.mp4" data-title="Media Studio" data-gh="https://github.com/austinkludass">
+      <div class="card" data-video="videos/mediastudio-demo.mp4" data-title="Media Studio">
         <div class="card-media">
           <img class="thumb" src="thumbs/mediastudio.jpg" alt="Media Studio" />
           <video src="videos/mediastudio-demo.mp4" loop muted playsinline preload="none"></video>
@@ -424,13 +395,26 @@
         </div>
       </div>
 
+      <div class="card" data-video="videos/jivelite-demo.mp4" data-title="Jive Lite">
+        <div class="card-media">
+          <img class="thumb" src="thumbs/jivelite.jpg" alt="Jive Lite" />
+          <video src="videos/jivelite-demo.mp4" loop muted playsinline preload="none"></video>
+          <div class="play-hint"><div class="play-hint-inner"><div class="play-tri"></div></div></div>
+        </div>
+        <div class="card-body">
+          <div class="card-top"><span class="card-title">Jive Lite</span><span class="card-cat">Desktop</span></div>
+          <p class="card-desc">Utility application allowing users to update and push jackpot data to live displays</p>
+          <div class="tag-row"><span class="tag">C# WPF</span></div>
+        </div>
+      </div>
+
     </div>
 
     <div class="subgroup">
       <p class="subgroup-label">C# gaming components</p>
       <div class="card-grid">
 
-        <div class="card" data-video="videos/mysterymadness-demo.mp4" data-title="Mystery Madness" data-gh="https://github.com/austinkludass">
+        <div class="card" data-video="videos/mysterymadness-demo.mp4" data-title="Mystery Madness">
           <div class="card-media">
             <img class="thumb" src="thumbs/mysterymadness.jpg" alt="Mystery Madness" />
             <video src="videos/mysterymadness-demo.mp4" loop muted playsinline preload="none"></video>
@@ -438,12 +422,12 @@
           </div>
           <div class="card-body">
             <div class="card-top"><span class="card-title">Mystery Madness</span><span class="card-cat">Component</span></div>
-            <p class="card-desc">Add your description here.</p>
+            <p class="card-desc">Progress style multi jackpot component.</p>
             <div class="tag-row"><span class="tag">C# WPF</span></div>
           </div>
         </div>
 
-        <div class="card" data-video="videos/odometer-cs-demo.mp4" data-title="Scrollable Odometer" data-gh="https://github.com/austinkludass">
+        <div class="card" data-video="videos/odometer-cs-demo.mp4" data-title="Scrollable Odometer">
           <div class="card-media">
             <img class="thumb" src="thumbs/odometer-cs.jpg" alt="Scrollable Odometer" />
             <video src="videos/odometer-cs-demo.mp4" loop muted playsinline preload="none"></video>
@@ -451,12 +435,12 @@
           </div>
           <div class="card-body">
             <div class="card-top"><span class="card-title">Scrollable Odometer</span><span class="card-cat">Component</span></div>
-            <p class="card-desc">Smooth animated digit counter component for gaming UIs.</p>
+            <p class="card-desc">Smooth animated digit counter component.</p>
             <div class="tag-row"><span class="tag">C# WPF</span></div>
           </div>
         </div>
 
-        <div class="card" data-video="videos/totalizer-demo.mp4" data-title="Totalizer" data-gh="https://github.com/austinkludass">
+        <div class="card" data-video="videos/totalizer-demo.mp4" data-title="Totalizer">
           <div class="card-media">
             <img class="thumb" src="thumbs/totalizer.jpg" alt="Totalizer" />
             <video src="videos/totalizer-demo.mp4" loop muted playsinline preload="none"></video>
@@ -464,7 +448,7 @@
           </div>
           <div class="card-body">
             <div class="card-top"><span class="card-title">Totalizer</span><span class="card-cat">Component</span></div>
-            <p class="card-desc">Add your description here.</p>
+            <p class="card-desc">Gaming component to display jackpot totals.</p>
             <div class="tag-row"><span class="tag">C# WPF</span></div>
           </div>
         </div>
@@ -476,7 +460,7 @@
       <p class="subgroup-label">SolidJS gaming components</p>
       <div class="card-grid">
 
-        <div class="card" data-video="videos/odometer-solid-demo.mp4" data-title="Odometer (SolidJS)" data-gh="https://github.com/austinkludass">
+        <div class="card" data-video="videos/odometer-solid-demo.mp4" data-title="Odometer (SolidJS)">
           <div class="card-media">
             <img class="thumb" src="thumbs/odometer-solid.jpg" alt="Odometer SolidJS" />
             <video src="videos/odometer-solid-demo.mp4" loop muted playsinline preload="none"></video>
@@ -484,12 +468,12 @@
           </div>
           <div class="card-body">
             <div class="card-top"><span class="card-title">Odometer</span><span class="card-cat">Component</span></div>
-            <p class="card-desc">Animated number counter component rebuilt in SolidJS for web-based gaming UIs.</p>
+            <p class="card-desc">Animated number counter component rebuilt in SolidJS for web-based media displays.</p>
             <div class="tag-row"><span class="tag">SolidJS</span></div>
           </div>
         </div>
 
-        <div class="card" data-video="videos/winnerbox-demo.mp4" data-title="WinnerBox" data-gh="https://github.com/austinkludass">
+        <div class="card" data-video="videos/winnerbox-demo.mp4" data-title="WinnerBox">
           <div class="card-media">
             <img class="thumb" src="thumbs/winnerbox.jpg" alt="WinnerBox" />
             <video src="videos/winnerbox-demo.mp4" loop muted playsinline preload="none"></video>
@@ -497,12 +481,12 @@
           </div>
           <div class="card-body">
             <div class="card-top"><span class="card-title">WinnerBox</span><span class="card-cat">Component</span></div>
-            <p class="card-desc">Add your description here.</p>
+            <p class="card-desc">Jackpot info component rebuilt in SolidJS.</p>
             <div class="tag-row"><span class="tag">SolidJS</span></div>
           </div>
         </div>
 
-        <div class="card" data-video="videos/winnerlist-demo.mp4" data-title="WinnerList" data-gh="https://github.com/austinkludass">
+        <div class="card" data-video="videos/winnerlist-demo.mp4" data-title="WinnerList">
           <div class="card-media">
             <img class="thumb" src="thumbs/winnerlist.jpg" alt="WinnerList" />
             <video src="videos/winnerlist-demo.mp4" loop muted playsinline preload="none"></video>
@@ -510,7 +494,7 @@
           </div>
           <div class="card-body">
             <div class="card-top"><span class="card-title">WinnerList</span><span class="card-cat">Component</span></div>
-            <p class="card-desc">Add your description here.</p>
+            <p class="card-desc">List of previous jackpots rebuilt in SolidJS.</p>
             <div class="tag-row"><span class="tag">SolidJS</span></div>
           </div>
         </div>
@@ -527,7 +511,7 @@
     </div>
     <div class="card-grid">
 
-      <div class="card" data-video="videos/scrimcreator-demo.mp4" data-title="Scrim Creator" data-gh="https://github.com/austinkludass/ScrimCreator">
+      <div class="card" data-video="videos/scrimcreator-demo.mp4" data-title="Scrim Creator">
         <div class="card-media">
           <img class="thumb" src="thumbs/scrimcreator.jpg" alt="Scrim Creator" />
           <video src="videos/scrimcreator-demo.mp4" loop muted playsinline preload="none"></video>
@@ -535,34 +519,34 @@
         </div>
         <div class="card-body">
           <div class="card-top"><span class="card-title">Scrim Creator</span><span class="card-cat">Mobile</span></div>
-          <p class="card-desc">Team and match generator for gamers. Available on the Google Play Store.</p>
+          <p class="card-desc">Team and match generator for gamers.</p>
           <div class="tag-row"><span class="tag">Android Studio</span><span class="tag">Java</span></div>
         </div>
       </div>
 
-      <div class="card" data-video="videos/hackertracker-demo.mp4" data-title="Kludo's Hacker Tracker" data-gh="https://github.com/austinkludass">
+      <div class="card" data-video="videos/hackertracker-demo.mp4" data-title="Kludo's Hacker Tracker">
         <div class="card-media">
           <img class="thumb" src="thumbs/hackertracker.jpg" alt="Hacker Tracker" />
           <video src="videos/hackertracker-demo.mp4" loop muted playsinline preload="none"></video>
           <div class="play-hint"><div class="play-hint-inner"><div class="play-tri"></div></div></div>
         </div>
         <div class="card-body">
-          <div class="card-top"><span class="card-title">Kludo's Hacker Tracker</span><span class="card-cat">Web</span></div>
-          <p class="card-desc">Add your description here.</p>
-          <div class="tag-row"><span class="tag">—</span></div>
+          <div class="card-top"><span class="card-title">Kludo's Hacker Tracker</span><span class="card-cat">Desktop</span></div>
+          <p class="card-desc">Database to track all the hackers found in online games.</p>
+          <div class="tag-row"><span class="tag">C# WPF</span><span class="tag">Firebase</span></div>
         </div>
       </div>
 
-      <div class="card" data-video="videos/sierpinski-demo.mp4" data-title="Sierpinski Simulator" data-gh="https://github.com/austinkludass">
+      <div class="card" data-video="videos/sierpinski-demo.mp4" data-title="Sierpinski Simulator">
         <div class="card-media">
           <img class="thumb" src="thumbs/sierpinski.jpg" alt="Sierpinski Simulator" />
           <video src="videos/sierpinski-demo.mp4" loop muted playsinline preload="none"></video>
           <div class="play-hint"><div class="play-hint-inner"><div class="play-tri"></div></div></div>
         </div>
         <div class="card-body">
-          <div class="card-top"><span class="card-title">Sierpinski Simulator</span><span class="card-cat">Web</span></div>
+          <div class="card-top"><span class="card-title">Sierpinski Simulator</span><span class="card-cat">Desktop</span></div>
           <p class="card-desc">Interactive visualisation of the Sierpinski triangle fractal.</p>
-          <div class="tag-row"><span class="tag">—</span></div>
+          <div class="tag-row"><span class="tag">Java</span></div>
         </div>
       </div>
 
@@ -606,12 +590,10 @@
   const modal      = document.getElementById('modal');
   const mVideo     = document.getElementById('modal-video');
   const mTitle     = document.getElementById('modal-title');
-  const mGh        = document.getElementById('modal-gh-link');
   const mClose     = document.getElementById('modal-close');
 
-  function openModal(src, title, gh) {
+  function openModal(src, title) {
     mTitle.textContent = title;
-    mGh.href = gh;
     mVideo.src = src;
     modal.classList.add('open');
     mVideo.play();
@@ -626,8 +608,8 @@
 
   document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', () => {
-      const { video, title, gh } = card.dataset;
-      if (video) openModal(video, title, gh);
+      const { video, title } = card.dataset;
+      if (video) openModal(video, title);
     });
   });
 
